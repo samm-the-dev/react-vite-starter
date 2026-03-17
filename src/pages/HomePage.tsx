@@ -1,7 +1,7 @@
 export function HomePage() {
   return (
-    <div className="max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Welcome</h1>
+    <div className="mx-auto max-w-2xl">
+      <h1 className="mb-4 text-3xl font-bold">Welcome</h1>
       <p className="text-muted-foreground mb-6">
         This is a starter template with React, Vite, Tailwind CSS, and TypeScript.
       </p>
@@ -17,16 +17,16 @@ export function HomePage() {
       </div>
 
       <section className="mt-12">
-        <h2 className="text-xl font-semibold mb-3">Getting Started</h2>
-        <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
+        <h2 className="mb-3 text-xl font-semibold">Getting Started</h2>
+        <ol className="text-muted-foreground list-inside list-decimal space-y-2">
           <li>
-            Update <code className="bg-muted px-1 rounded">package.json</code> with your app name
+            Update <code className="bg-muted rounded px-1">package.json</code> with your app name
           </li>
           <li>
-            Update the GitHub URL in <code className="bg-muted px-1 rounded">Layout.tsx</code>
+            Update the GitHub URL in <code className="bg-muted rounded px-1">Layout.tsx</code>
           </li>
           <li>
-            Customize colors in <code className="bg-muted px-1 rounded">index.css</code>
+            Customize colors in <code className="bg-muted rounded px-1">index.css</code>
           </li>
           <li>Add your components and pages</li>
         </ol>
@@ -37,9 +37,9 @@ export function HomePage() {
 
 function FeatureCard({ title, description }: { title: string; description: string }) {
   return (
-    <div data-testid="feature-card" className="p-4 border border-border rounded-lg bg-card">
-      <h3 className="font-semibold text-card-foreground">{title}</h3>
-      <p className="text-sm text-muted-foreground mt-1">{description}</p>
+    <div data-testid="feature-card" className="border-border bg-card rounded-lg border p-4">
+      <h3 className="text-card-foreground font-semibold">{title}</h3>
+      <p className="text-muted-foreground mt-1 text-sm">{description}</p>
     </div>
   );
 }

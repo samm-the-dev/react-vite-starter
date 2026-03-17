@@ -9,20 +9,20 @@ export function Layout() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="bg-background text-foreground min-h-screen">
       {/* Header */}
-      <header className="border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold text-primary hover:text-primary-hover">
+      <header className="border-border border-b">
+        <div className="container mx-auto flex items-center justify-between px-4 py-4">
+          <Link to="/" className="text-primary hover:text-primary-hover text-xl font-bold">
             My App
           </Link>
 
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-md hover:bg-muted"
+            className="hover:bg-muted rounded-md p-2"
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
-            {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
         </div>
       </header>
@@ -33,9 +33,9 @@ export function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border mt-auto">
-        <div className="container mx-auto px-4 py-6 flex items-center justify-center gap-4 text-muted-foreground text-sm">
-          <Link to="/credits" className="underline hover:text-foreground">
+      <footer className="border-border mt-auto border-t">
+        <div className="text-muted-foreground container mx-auto flex items-center justify-center gap-4 px-4 py-6 text-sm">
+          <Link to="/credits" className="hover:text-foreground underline">
             Credits & Licenses
           </Link>
           <span aria-hidden="true">&middot;</span>
@@ -43,7 +43,7 @@ export function Layout() {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-foreground"
+            className="hover:text-foreground underline"
           >
             GitHub
           </a>

@@ -28,7 +28,7 @@ npm run dev
 | **React 19**     | Latest with hooks                           |
 | **Vite**         | Fast dev server, optimized builds           |
 | **TypeScript**   | Strict mode, path aliases (`@/`)            |
-| **Tailwind CSS** | With CSS variable theming                   |
+| **Tailwind CSS** | v4 with CSS variable theming                |
 | **Dark mode**    | `useTheme` hook + class strategy            |
 | **React Router** | v7 with layout routes                       |
 | **Testing**      | Vitest + Testing Library                    |
@@ -60,11 +60,12 @@ src/
 
 The `config/` directory contains copy-once configuration templates for project setup:
 
-| Directory | Description | Usage |
-|-----------|-------------|-------|
-| `github-workflows/` | CI and GitHub Pages deploy workflows | Copy to `.github/workflows/` |
-| `github-rulesets/` | Branch protection + Copilot auto-review | Apply via `gh api` |
-| `a11y-audit/` | Playwright + axe-core accessibility audit | Copy to `scripts/` |
+| Directory           | Description                               | Usage                        |
+| ------------------- | ----------------------------------------- | ---------------------------- |
+| `github-workflows/` | CI and GitHub Pages deploy workflows      | Copy to `.github/workflows/` |
+| `github-rulesets/`  | Branch protection + Copilot auto-review   | Apply via `gh api`           |
+| `a11y-audit/`       | Playwright + axe-core accessibility audit | Copy to `scripts/`           |
+| `pwa-icons/`        | Lucide/SVG to PWA icon generator          | Copy to `scripts/`           |
 
 These are reference configs -- copy what you need during init, then customize per-project. See each directory's README for details.
 
@@ -133,7 +134,7 @@ modal.open(user);
 
 // Render
 {
-  modal.item && <UserModal user={modal.item} onClose={modal.close} />
+  modal.item && <UserModal user={modal.item} onClose={modal.close} />;
 }
 ```
 

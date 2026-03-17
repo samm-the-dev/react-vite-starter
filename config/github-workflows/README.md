@@ -4,10 +4,10 @@ Reusable GitHub Actions workflow templates for Node.js projects.
 
 ## Available Workflows
 
-| Workflow | Purpose |
-|----------|---------|
-| `ci.yml` | Lint, test, and build on PRs and main pushes |
-| `deploy-gh-pages.yml` | Deploy to GitHub Pages on main pushes |
+| Workflow              | Purpose                                      |
+| --------------------- | -------------------------------------------- |
+| `ci.yml`              | Lint, test, and build on PRs and main pushes |
+| `deploy-gh-pages.yml` | Deploy to GitHub Pages on main pushes        |
 
 ## Usage
 

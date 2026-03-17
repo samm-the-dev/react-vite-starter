@@ -33,11 +33,7 @@
     {
       "type": "copilot_code_review_analysis_tools",
       "parameters": {
-        "tools": [
-          { "name": "CodeQL" },
-          { "name": "ESLint" },
-          { "name": "PMD" }
-        ]
+        "tools": [{ "name": "CodeQL" }, { "name": "ESLint" }, { "name": "PMD" }]
       }
     }
   ],

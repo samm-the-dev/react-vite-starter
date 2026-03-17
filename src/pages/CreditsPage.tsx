@@ -24,8 +24,7 @@ export function CreditsPage() {
       <section>
         <h2 className="mb-3 text-xl font-semibold">About</h2>
         <p className="text-muted-foreground">
-          {/* TODO: Add project description */}
-          A brief description of your project.
+          {/* TODO: Add project description */}A brief description of your project.
         </p>
       </section>
     </div>
