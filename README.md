@@ -65,7 +65,6 @@ The `config/` directory contains copy-once configuration templates for project s
 | `github-workflows/` | CI and GitHub Pages deploy workflows      | Copy to `.github/workflows/` |
 | `github-rulesets/`  | Branch protection + Copilot auto-review   | Apply via `gh api`           |
 | `a11y-audit/`       | Playwright + axe-core accessibility audit | Copy to `scripts/`           |
-| `pwa-icons/`        | Lucide/SVG to PWA icon generator          | Copy to `scripts/`           |
 
 These are reference configs -- copy what you need during init, then customize per-project. See each directory's README for details.
 
