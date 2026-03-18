@@ -52,7 +52,7 @@ const ROUTES = [
 If your app uses a theme toggle with localStorage:
 
 ```javascript
-const THEME_KEY = 'app-theme';  // your localStorage key
+const THEME_KEY = 'app-theme'; // your localStorage key
 ```
 
 Set to `null` if not using theme toggle:
@@ -68,6 +68,7 @@ npm run audit:a11y
 ```
 
 Output:
+
 ```
 Starting Vite dev server...
 Dev server running at http://localhost:5174
@@ -96,7 +97,7 @@ a11y job configuration to add to your CI workflow.
 const VIEWPORTS = {
   desktop: { width: 1280, height: 800 },
   mobile: { width: 375, height: 812 },
-  tablet: { width: 768, height: 1024 },  // add more as needed
+  tablet: { width: 768, height: 1024 }, // add more as needed
 };
 ```
 
@@ -107,8 +108,8 @@ To exclude specific rules or configure axe:
 ```javascript
 async function runAxe(page) {
   const results = await new AxeBuilder({ page })
-    .exclude('#known-issue')  // skip elements
-    .disableRules(['color-contrast'])  // disable rules
+    .exclude('#known-issue') // skip elements
+    .disableRules(['color-contrast']) // disable rules
     .analyze();
   // ...
 }
